@@ -82,6 +82,11 @@
   padding-top: 15px;
 }
 
+.red-social-qs a img {
+  height: 45px;
+  padding-top: 15px;
+}
+
 .red-social :hover {
   transform: scale(1.1);
 }
@@ -584,7 +589,7 @@ a {
   margin-top: 20px;
 }
 
-.mapa P {
+.mapa p {
   color: rgb(136, 128, 128);
   font-weight: bold;
   font-size: 25px;
