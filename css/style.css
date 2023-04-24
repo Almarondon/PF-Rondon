@@ -630,4 +630,26 @@ a {
   .imagen {
     margin: 2px;
   }
+
+.col-sm-6 h2 {
+  margin-top: 20px;
+}
+
+.work-with-us{
+  margin-bottom: 40px;
+}
+
+.mapa iframe{
+  width: 400px;
+  height: 400px;
+
+}
+
+.contacto{
+  justify-content: flex-start;
+  width: 580px;
+  height: 500px;
+}
+
+
 }
