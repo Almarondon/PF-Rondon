@@ -605,9 +605,9 @@ a {
 
 /* ---------MQ Mobile Last (max-width)-----*/
 /* index */
-@media (max-width:550px) {
+@media (max-width:420px) {
 
-  .header a.logo {
+  .logo {
     display: none;
   }
 
