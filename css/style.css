@@ -44,7 +44,7 @@
   color: white
 }
 
-.logo-mobile img {
+.logo-mobile {
   display: none;
 }
 
@@ -619,7 +619,7 @@ a {
     width: 130px;
   }
 
-  .logo-mobile img {
+  .logo-mobile {
     display: block;
     width: 60px;
     height: auto;
