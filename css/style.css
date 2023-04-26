@@ -35,13 +35,17 @@
 .nav ul a {
   text-decoration: none;
   color: dimgray;
-  font-size: 1em;
+  font-size: 0.8em;
   font-style: italic;
 }
 
 .nav ul a:hover {
   text-decoration: none;
   color: white
+}
+
+.logo-mobile img {
+  display: none;
 }
 
 
@@ -193,6 +197,7 @@ transform: rotate(360deg);
 
 .total-tto {
   display: flex;
+  flex-wrap: wrap;
   padding: 30px;
   justify-content: space-evenly;
   background-color: rgb(244, 229, 235);
@@ -492,19 +497,19 @@ a {
 
 .section-services {
   padding: 60px;
-
+  text-align: -webkit-center;
 }
 
 .section-services article {
   display: flex;
   justify-content: space-evenly;
+  width: fit-content;
   margin: 60px;
   align-items: center;
   height: 300px;
   text-align: center;
   background-color: rgb(244, 229, 235);
   border-radius: 30px;
-
 }
 
 
@@ -516,8 +521,11 @@ a {
   width: 250px;
   height: 250px;
   transition: 0.5s;
+  padding: 60px;
+}
 
-
+.section-services article div {
+  padding: 60px;
 }
 
 .section-services article img:hover {
@@ -567,10 +575,8 @@ a {
 
 .contacto {
   display: flex;
-  padding: 50px;
   justify-content: center;
-  width: 1500px;
-
+  margin-bottom: 50px;
 }
 
 
@@ -597,28 +603,55 @@ a {
 }
 
 
-
-
-
-/* ------------Mobile -------------*/
+/* ---------MQ Mobile Last (max-width)-----*/
 /* index */
-@media (max-width:480px) {
-  .nav ul a {
-    font-size: 0.7em;
+@media (max-width:550px) {
+
+  .header a.logo {
+    display: none;
   }
+
+  .nav ul {
+    flex-flow: column wrap;
+  }
+
+  .header a img {
+    width: 130px;
+  }
+
+  .logo-mobile img {
+    display: block;
+    width: 60px;
+    height: auto;
+  }
+
+
+  .nav ul a {
+    font-size: 0.8em;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+  }
+
+
 
   h1 {
     font-size: 1.3em;
   }
 
   .titulo h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .banner-main {
-    background-size: 100% 100%;
-    height: 100px;
+    padding: 20px;
+    height: 54px;
   }
+
+
+
+
+
 
 
   .total-tto {
@@ -627,6 +660,7 @@ a {
 
   .total-tto img {
     width: 100%;
+    height: auto;
   }
 
   .total-tto p {
@@ -634,8 +668,8 @@ a {
   }
 
   .spa-day img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     justify-content: center;
 
   }
@@ -665,37 +699,76 @@ a {
   }
 
   .mapa iframe {
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    height: auto;
 
   }
 
   /* contacto */
   .contacto {
-    justify-content: flex-start;
-    width: 580px;
-    height: 500px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
   }
 
   .mapa h1 {
     font-size: 20px;
-   
+
   }
 
   .mapa p {
     font-size: 20px;
-    
-  }   
 
-.titulo-contacto {
-  font-size: 20px;
-}
+  }
 
-
+  .titulo-contacto {
+    font-size: 20px;
+  }
 
 
 
+  .footer p {
+    font-size: 0.8em;
+  }
+
+  .section-services {
+    padding: 2px;
+  }
+
+  .section-services article {
+    height: auto;
+    flex-wrap: wrap;
+    margin: 10px 2px;
+
+  }
+
+  .section-services article img {
+    padding: 5px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .section-services article div {
+    padding: 5px;
+  }
+
+  .section-services article p {
+    width: auto;
+    font-size: 0.7em;
+  }
+
+  .section-services article h2 {
+    font-size: 0.8em;
+  }
+
+  .section-services article button {
+    margin-bottom: 10px;
+    font-size: 0.7em;
+  }
 
 
+  .titulo-servicios {
+    font-size: 24px;
+  }
 
 }
