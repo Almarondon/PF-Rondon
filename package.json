@@ -1,0 +1,25 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "mi estetica",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "alma": "echo \"Hola soy Alma\"",
+    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Almarondon/proyecto-coder-01.git"
+  },
+  "author": "Alma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Almarondon/proyecto-coder-01/issues"
+  },
+  "homepage": "https://github.com/Almarondon/proyecto-coder-01#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
