@@ -1,0 +1,54 @@
+
+
+.star {
+    padding: 60px;
+    color: gray;
+
+}
+
+.quienes-somos {
+    img {
+        width: 500px;
+        border-radius: 20px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    }
+
+    p {
+        color: gray;
+        align-items: center;
+    }
+}
+
+
+.vision {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 40px;
+
+    img {
+        width: 500px;
+        border-radius: 20px;
+        color: rgb(99, 94, 94);
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+
+    p {
+        color: gray;
+        text-align: center;
+    }
+}
+
+
+
+
+
+

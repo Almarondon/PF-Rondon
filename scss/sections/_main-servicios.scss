@@ -1,0 +1,106 @@
+.section-services {
+    padding: 60px;
+    text-align: -webkit-center;
+
+    .titulo-servicios {
+        font-style: italic;
+        font-size: 40px;
+        font-family: serif;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-evenly;
+        width: fit-content;
+        margin: 60px;
+        align-items: center;
+        height: 300px;
+        text-align: center;
+        background-color: rgb(244, 229, 235);
+        border-radius: 30px;
+
+        img {
+            position: relative;
+            border-radius: 30px;
+            width: 250px;
+            height: 250px;
+            transition: 0.5s;
+            padding: 60px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        div {
+            padding: 60px;
+
+            p {
+                width: 50vb;
+                text-align: justify;
+                color: gray;
+                padding-top: 20px;
+                margin: 20px 0;
+            }
+
+            button {
+                padding: 15px 15px;
+                border-radius: 30px;
+                min-width: 100px;
+                border-style: none;
+                box-shadow: 2px 2px 2px;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// --------Media Queries-------------
+
+@media (max-width:550px) {
+
+    .section-services {
+        padding: 2px;
+
+        article {
+            height: auto;
+            flex-wrap: wrap;
+            margin: 10px 2px;
+
+            img {
+                padding: 5px;
+                width: 220px;
+                height: 220px;
+            }
+
+            div {
+                padding: 5px;
+            }
+
+            p {
+                width: auto;
+                font-size: 0.7em;
+            }
+
+            h2 {
+                font-size: 0.8em;
+            }
+
+            button {
+                margin-bottom: 10px;
+                font-size: 0.7em;
+            }
+        }
+
+        .titulo-servicios {
+            font-size: 24px;
+        }
+    }
+
+}

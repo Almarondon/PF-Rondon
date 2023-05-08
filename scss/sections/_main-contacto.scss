@@ -1,0 +1,115 @@
+.mapa {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h1 {
+        height: 60px;
+        color: rgb(136, 128, 128);
+        font-weight: bold;
+        font-size: 30px;
+        text-shadow: -1px 0 rgb(58, 58, 58), 0 0px rgb(58, 58, 58), 0px 0 rgb(58, 58, 58), 0 0px rgb(58, 58, 58);
+        margin-top: 20px;
+    }
+
+    p {
+        color: rgb(136, 128, 128);
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.titulo-contacto {
+    margin-top: 60px;
+    color: rgb(136, 128, 128);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: -1px 0 rgb(58, 58, 58), 0 0px rgb(58, 58, 58), 0px 0 rgb(58, 58, 58), 0 0px rgb(58, 58, 58);
+    text-align: center;
+}
+
+
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    form {
+        width: 60%;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        border-radius: 9px;
+
+        label {
+            background-color: white;
+            color: rgb(136, 128, 128);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-color: white;
+            border-width: 0.1px;
+
+            &:focus {
+                border: rgb(238, 214, 222) 5px solid;
+            }
+        }
+
+        button {
+            padding: 15px 15px;
+            background-color: $almarose;
+            border-radius: 30px;
+            min-width: 100px;
+            border-style: none;
+            box-shadow: 2px 2px 2px;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+// --------Media Queries-------------
+@media (max-width:550px) {
+    .contacto {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo-contacto {
+        font-size: 20px;
+    }
+
+    .mapa {
+        h1 {
+            font-size: 20px;
+
+        }
+
+        p {
+            font-size: 20px;
+
+        }
+
+        iframe {
+            width: 90%;
+            height: auto;
+
+        }
+    }
+}

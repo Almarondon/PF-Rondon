@@ -1,0 +1,62 @@
+.work-with-us {
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+
+    form {
+        width: 60%;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        border-radius: 9px;
+
+        label {
+            background-color: white;
+            color: rgb(136, 128, 128);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-color: white;
+            border-width: 0.1px;
+
+            &:focus {
+                border: rgb(238, 214, 222) 5px solid;
+            }
+
+        }
+
+        button {
+            padding: 15px 15px;
+            background-color: $almarose;
+            border-radius: 30px;
+            min-width: 100px;
+            border-style: none;
+            box-shadow: 2px 2px 2px;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+// --------Media Queries----
+@media (max-width:550px) {
+    .work-with-us {
+        margin-bottom: 40px;
+
+    }
+}

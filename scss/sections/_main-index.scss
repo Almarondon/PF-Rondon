@@ -1,0 +1,280 @@
+.main {
+    min-height: 80vh;
+
+
+    .banner-main {
+        background-image: url("../image/esta.webp");
+        background-repeat: no-repeat;
+        height: 450px;
+        padding-top: 50px;
+        animation-duration: 3s;
+        background-size: cover;
+        display: flex;
+
+        button {
+            padding: 15px 15px;
+            background-color: white;
+            border-radius: 30px;
+            min-width: 100px;
+            border-style: none;
+            color: gray;
+            font-size: 20px;
+            text-shadow: -1px 0 rgb(58, 58, 58), 0 0px rgb(58, 58, 58), 0px 0 rgb(58, 58, 58), 0 -0px rgb(58, 58, 58);
+            font-style: italic;
+            font-family: $arimofont;
+            align-self: center;
+            margin: 15px;
+            &:hover {
+                cursor: pointer;
+                background-color: $almarose;
+                scale: 1.05;
+                transition: 0.5s;
+            }
+        }
+
+    }
+
+    .titulo {
+        margin: 0 80px;
+        padding: 40px;
+
+        .container-services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+
+            article {
+                margin: 10px;
+
+                img {
+                    height: 220px;
+                    width: 220px;
+                    border-radius: 30px;
+                    transition: 0.5s;
+                    padding: 10px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                h2 {
+                    font-size: 20px;
+                    color: gray;
+                    margin: 10px;
+                    font-style: italic;
+                }
+
+                button {
+                    padding: 15px 15px;
+                    background-color: $almarose;
+                    border-radius: 30px;
+                    min-width: 100px;
+                    border-style: none;
+                    box-shadow: 2px 2px 2px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .total-tto {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        justify-content: space-evenly;
+        background-color: rgb(244, 229, 235);
+
+        img {
+            width: 600px;
+            border-radius: 20px;
+        }
+
+        p {
+            width: 400px;
+            text-align: -webkit-center;
+            color: gray;
+            padding-top: 20px;
+
+        }
+
+    }
+
+    .spa-day {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            width: 500px;
+            height: 400px;
+        }
+
+    }
+
+
+    .section-container {
+        display: flex;
+        justify-content: center;
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "imagen1 imagen2 imagen3 imagen4 imagen5"
+                "imagen6 imagen7 imagen8 imagen9 imagen10"
+            ;
+            width: 1255px;
+            height: 750px;
+            padding: 15px;
+            background-repeat: no-repeat;
+            flex-direction: column;
+
+            .imagen {
+                margin: 30px;
+                background-position: center;
+                background-size: contain;
+                transition: 0.5s;
+                background-color: rgb(248, 239, 239);
+                display: flex;
+                background-repeat: no-repeat;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .imagen1 {
+                grid-area: imagen1;
+                background-image: url("../image/producto-1.png");
+            }
+
+            .imagen2 {
+                grid-area: imagen2;
+                background-image: url("../image/producto-2.png");
+            }
+
+            .imagen3 {
+                grid-area: imagen3;
+                background-image: url("../image/producto-3.png");
+            }
+
+            .imagen4 {
+                grid-area: imagen4;
+                background-image: url("../image/producto-4.png");
+            }
+
+            .imagen5 {
+                grid-area: imagen5;
+                background-image: url("../image/producto-5.png");
+            }
+
+            .imagen6 {
+                grid-area: imagen6;
+                background-image: url("../image/producto-6.png");
+            }
+
+            .imagen7 {
+                grid-area: imagen7;
+                background-image: url("../image/producto-7.png");
+            }
+
+            .imagen8 {
+                grid-area: imagen8;
+                background-image: url("../image/producto-8.png");
+            }
+
+            .imagen9 {
+                grid-area: imagen9;
+                background-image: url("../image/producto-9.png");
+            }
+
+            .imagen10 {
+                grid-area: imagen10;
+                background-image: url("../image/producto-10.png");
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+// -----Media Queries----------
+@media (max-width:550px) {
+    .main {
+        .titulo {
+            margin: 0;
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        .banner-main {
+            padding: 20px;
+            height: 80px;
+            button {
+                padding: 2px;
+                background-color: white;
+                border-radius: 2px;
+                width: 34px;
+                border-style: none;
+                color: gray;
+                font-size: 9px;
+                text-shadow: -1px 0 rgb(58, 58, 58), 0 0px rgb(58, 58, 58), 0px 0 rgb(58, 58, 58), 0 -0px rgb(58, 58, 58);
+                font-style: italic;
+                font-family: $arimofont;
+                align-self: center;
+                margin: 15px;
+            }
+        }
+
+        .total-tto {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+
+        .spa-day {
+            img {
+                width: 100%;
+                height: auto;
+                justify-content: center;
+
+            }
+        }
+
+        .section-container {
+            .grid-container {
+                .imagen {
+                    margin: 2px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+}
