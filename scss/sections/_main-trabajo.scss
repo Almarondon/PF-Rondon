@@ -1,28 +1,30 @@
-.main-trabajo{
-    background-image: url(../../image/trabaja.webp);
+.main-trabajo {
+    background-image: url(../../image/pepeganaga.webp);
     background-repeat: no-repeat;
-    
-   
+    background-size: 100%;
+
+
     .work-with-us {
-        margin-top: 30px;
+        padding: 30px 0 40px 0;
         align-items: center;
         display: flex;
         flex-direction: column;
         min-height: 80vh;
-        margin-bottom: 40px;
-    
+        
+
         form {
             width: 50vw;
-            background-color: rgb(255, 255, 255);
+            background-color: white;
             padding: 10px;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
             border-radius: 9px;
-            
+            opacity: 0.8;
+
             label {
                 background-color: white;
                 color: rgb(136, 128, 128);
             }
-    
+
             input {
                 width: 100%;
                 padding: 12px 20px;
@@ -30,13 +32,13 @@
                 box-sizing: border-box;
                 background-color: white;
                 border-width: 0.1px;
-    
+
                 &:focus {
                     border: rgb(238, 214, 222) 5px solid;
                 }
-    
+
             }
-    
+
             button {
                 padding: 15px 15px;
                 background-color: $almarose;
@@ -44,7 +46,7 @@
                 min-width: 100px;
                 border-style: none;
                 box-shadow: 2px 2px 2px;
-    
+
                 &:hover {
                     transform: scale(1.1);
                     transition: 0.5s;
@@ -52,7 +54,7 @@
             }
         }
     }
-    
+
     a {
         text-decoration: none;
     }
@@ -65,7 +67,8 @@
 @media (max-width:550px) {
     .work-with-us {
         margin-bottom: 40px;
-        form { 
+
+        form {
             width: 80vw;
         }
     }
