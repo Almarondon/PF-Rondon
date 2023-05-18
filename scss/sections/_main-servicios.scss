@@ -2,11 +2,11 @@
     padding: 60px;
     text-align: -webkit-center;
 
-    .titulo-servicios {
-        font-style: italic;
-        font-size: 40px;
-        font-family: serif;
-    }
+    // .titulo-servicios {
+    //     font-style: italic;
+    //     font-size: 40px;
+    //     font-family: serif;
+    // }
 
     article {
         display: flex;
@@ -22,10 +22,10 @@
         img {
             position: relative;
             border-radius: 30px;
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             transition: 0.5s;
-            padding: 60px;
+            padding: 0 30px;
 
             &:hover {
                 transform: scale(1.1);
@@ -33,18 +33,17 @@
         }
 
         div {
-            padding: 60px;
-
+            padding-right: 30px;
+            width: 35vw;
             p {
-                width: 50vb;
+                
                 text-align: justify;
                 color: gray;
-                padding-top: 20px;
-                margin: 20px 0;
+                margin-bottom: 20px;
             }
 
             button {
-                padding: 15px 15px;
+                padding: 10px 15px;
                 border-radius: 30px;
                 min-width: 100px;
                 border-style: none;
@@ -81,6 +80,7 @@
 
             div {
                 padding: 5px;
+                width: 80%;
             }
 
             p {

@@ -3,9 +3,9 @@
 
 
     .banner-main {
-        background-image: url("../image/esta.webp");
+        background-image: url("../../image/q.avif");
         background-repeat: no-repeat;
-        height: 450px;
+        height: 600px;
         padding-top: 50px;
         animation-duration: 3s;
         background-size: cover;
@@ -24,6 +24,7 @@
             font-family: $arimofont;
             align-self: center;
             margin: 15px;
+
             &:hover {
                 cursor: pointer;
                 background-color: $almarose;
@@ -92,8 +93,12 @@
         justify-content: space-evenly;
         background-color: rgb(244, 229, 235);
 
+        div {
+            align-self: center;
+        }
+
         img {
-            width: 600px;
+            width: 40vw;
             border-radius: 20px;
         }
 
@@ -112,11 +117,18 @@
         flex-wrap: wrap;
         justify-content: center;
 
+
         img {
             width: 500px;
             height: 400px;
-        }
+            transition: 0.5s;
+            border-radius: 5px;
 
+            &:hover {
+                transform: scale(1.1);
+
+            }
+        }
     }
 
 
@@ -218,6 +230,7 @@
     .main {
         .titulo {
             margin: 0;
+
             h1 {
                 font-size: 20px;
             }
@@ -226,6 +239,7 @@
         .banner-main {
             padding: 20px;
             height: 80px;
+
             button {
                 padding: 2px;
                 background-color: white;

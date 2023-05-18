@@ -31,6 +31,7 @@
         font-style: italic; }
         .header .nav ul li a:hover {
           text-decoration: none;
+          font-weight: bold;
           color: white;
           scale: 1.05;
           transition: 0.5s; }
@@ -62,9 +63,9 @@
 .main {
   min-height: 80vh; }
   .main .banner-main {
-    background-image: url("../image/esta.webp");
+    background-image: url("../../image/q.avif");
     background-repeat: no-repeat;
-    height: 450px;
+    height: 600px;
     padding-top: 50px;
     animation-duration: 3s;
     background-size: cover;
@@ -128,8 +129,10 @@
     padding: 30px;
     justify-content: space-evenly;
     background-color: #f4e5eb; }
+    .main .total-tto div {
+      align-self: center; }
     .main .total-tto img {
-      width: 600px;
+      width: 40vw;
       border-radius: 20px; }
     .main .total-tto p {
       width: 400px;
@@ -142,7 +145,11 @@
     justify-content: center; }
     .main .spa-day img {
       width: 500px;
-      height: 400px; }
+      height: 400px;
+      transition: 0.5s;
+      border-radius: 5px; }
+      .main .spa-day img:hover {
+        transform: scale(1.1); }
   .main .section-container {
     display: flex;
     justify-content: center; }
@@ -266,10 +273,6 @@
 .section-services {
   padding: 60px;
   text-align: -webkit-center; }
-  .section-services .titulo-servicios {
-    font-style: italic;
-    font-size: 40px;
-    font-family: serif; }
   .section-services article {
     display: flex;
     justify-content: space-evenly;
@@ -283,22 +286,21 @@
     .section-services article img {
       position: relative;
       border-radius: 30px;
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       transition: 0.5s;
-      padding: 60px; }
+      padding: 0 30px; }
       .section-services article img:hover {
         transform: scale(1.1); }
     .section-services article div {
-      padding: 60px; }
+      padding-right: 30px;
+      width: 35vw; }
       .section-services article div p {
-        width: 50vb;
         text-align: justify;
         color: gray;
-        padding-top: 20px;
-        margin: 20px 0; }
+        margin-bottom: 20px; }
       .section-services article div button {
-        padding: 15px 15px;
+        padding: 10px 15px;
         border-radius: 30px;
         min-width: 100px;
         border-style: none;
@@ -318,7 +320,8 @@
         width: 220px;
         height: 220px; }
       .section-services article div {
-        padding: 5px; }
+        padding: 5px;
+        width: 80%; }
       .section-services article p {
         width: auto;
         font-size: 0.7em; }
@@ -330,47 +333,52 @@
     .section-services .titulo-servicios {
       font-size: 24px; } }
 
-.work-with-us {
-  margin-top: 30px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 80vh; }
-  .work-with-us form {
-    width: 60%;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 9px; }
-    .work-with-us form label {
+.main-trabajo {
+  background-image: url(../../image/trabaja.webp);
+  background-repeat: no-repeat; }
+  .main-trabajo .work-with-us {
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    margin-bottom: 40px; }
+    .main-trabajo .work-with-us form {
+      width: 50vw;
       background-color: white;
-      color: #888080; }
-    .work-with-us form input {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      background-color: white;
-      border-width: 0.1px; }
-      .work-with-us form input:focus {
-        border: #eed6de 5px solid; }
-    .work-with-us form button {
-      padding: 15px 15px;
-      background-color: #eed6de;
-      border-radius: 30px;
-      min-width: 100px;
-      border-style: none;
-      box-shadow: 2px 2px 2px; }
-      .work-with-us form button:hover {
-        transform: scale(1.1);
-        transition: 0.5s; }
-
-a {
-  text-decoration: none; }
+      padding: 10px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 9px; }
+      .main-trabajo .work-with-us form label {
+        background-color: white;
+        color: #888080; }
+      .main-trabajo .work-with-us form input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: white;
+        border-width: 0.1px; }
+        .main-trabajo .work-with-us form input:focus {
+          border: #eed6de 5px solid; }
+      .main-trabajo .work-with-us form button {
+        padding: 15px 15px;
+        background-color: #eed6de;
+        border-radius: 30px;
+        min-width: 100px;
+        border-style: none;
+        box-shadow: 2px 2px 2px; }
+        .main-trabajo .work-with-us form button:hover {
+          transform: scale(1.1);
+          transition: 0.5s; }
+  .main-trabajo a {
+    text-decoration: none; }
 
 @media (max-width: 550px) {
   .work-with-us {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+    .work-with-us form {
+      width: 80vw; } }
 
 .mapa {
   text-align: center;
@@ -385,8 +393,10 @@ a {
   .mapa p {
     color: #888080;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 20px; }
+  .mapa iframe {
+    width: 60vw; }
 
 .titulo-contacto {
   margin-top: 60px;
@@ -401,7 +411,7 @@ a {
   justify-content: center;
   margin-bottom: 50px; }
   .contacto form {
-    width: 60%;
+    width: 50vw;
     background-color: white;
     padding: 10px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -434,6 +444,8 @@ a {
     justify-content: center;
     width: 100%;
     height: auto; }
+    .contacto form {
+      width: 80vw; }
   .titulo-contacto {
     font-size: 20px; }
   .mapa h1 {
@@ -482,24 +494,24 @@ a {
 h1 {
   text-align: center;
   color: dimgray;
-  text-shadow: 1px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
+  text-shadow: 0.5px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
   margin: 30px 0;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2em;
   font-style: italic; }
 
 h2 {
   text-align: center;
   color: dimgray;
-  text-shadow: 1px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
+  text-shadow: 0.5px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
   margin: 30px 0;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 1em; }
 
 h3 {
   text-align: center;
   color: dimgray;
-  text-shadow: 1px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
+  text-shadow: 0.5px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
   margin: 30px 0;
   margin: 30px;
   font-weight: bold;
@@ -509,7 +521,7 @@ h3 {
 h4 {
   text-align: center;
   color: dimgray;
-  text-shadow: 1px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
+  text-shadow: 0.5px 0 #3a3a3a, 0 0px #3a3a3a, 0px 0 #3a3a3a, 0 0px #3a3a3a;
   margin: 30px 0;
   font-weight: bold;
   font-size: 1.2em;
@@ -517,4 +529,4 @@ h4 {
 
 @media (max-width: 550px) {
   h1 {
-    font-size: 1.3em; } }
+    font-size: 1.2em; } }

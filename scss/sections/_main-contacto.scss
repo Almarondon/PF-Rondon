@@ -14,8 +14,11 @@
     p {
         color: rgb(136, 128, 128);
         font-weight: bold;
-        font-size: 25px;
+        font-size: 15px;
         margin-bottom: 20px;
+    }
+    iframe{
+        width: 60vw;
     }
 }
 
@@ -37,7 +40,7 @@
     margin-bottom: 50px;
 
     form {
-        width: 60%;
+        width: 50vw;
         background-color: rgb(255, 255, 255);
         padding: 10px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
@@ -89,6 +92,9 @@
         justify-content: center;
         width: 100%;
         height: auto;
+        form { 
+            width: 80vw;
+        }
     }
 
     .titulo-contacto {
