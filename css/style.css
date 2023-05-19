@@ -210,7 +210,7 @@
     .main .titulo h1 {
       font-size: 20px; }
   .main .banner-main {
-    padding: 20px;
+    padding: 60px;
     height: 80px; }
     .main .banner-main button {
       padding: 2px;
@@ -269,6 +269,11 @@
   .vision p {
     color: gray;
     text-align: center; }
+
+@media (max-width: 550px) {
+  .quienes-somos img {
+    width: 270px;
+    border-radius: 20px; } }
 
 .section-services {
   padding: 60px;
@@ -376,10 +381,12 @@
     text-decoration: none; }
 
 @media (max-width: 550px) {
-  .work-with-us {
-    margin-bottom: 40px; }
-    .work-with-us form {
-      width: 80vw; } }
+  .main-trabajo {
+    background-image: url(../../image/pepeganaga.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; } }
 
 .mapa {
   text-align: center;
