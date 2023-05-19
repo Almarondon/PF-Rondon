@@ -339,7 +339,7 @@
       font-size: 24px; } }
 
 .main-trabajo {
-  background-image: url(../../image/pepeganaga.webp);
+  background-image: url("../../image/pepeganaga.webp");
   background-repeat: no-repeat;
   background-size: 100%; }
   .main-trabajo .work-with-us {
@@ -382,7 +382,7 @@
 
 @media (max-width: 550px) {
   .main-trabajo {
-    background-image: url(../../image/pepeganaga.webp);
+    background-image: url("../../image/pepeganaga.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
